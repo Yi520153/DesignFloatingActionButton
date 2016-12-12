@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.lcl.designfloatingactionbutton.MainActivity">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher"
+            app:backgroundTint="@color/colorAccent"
+            app:borderWidth="0dp"
+            app:elevation="20dp"
+            app:pressedTranslationZ="20dp"
+            app:rippleColor="@color/colorPrimary" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher"
+            app:backgroundTint="@color/colorPrimary"
+            app:borderWidth="0dp"
+            app:elevation="40dp"
+            app:pressedTranslationZ="40dp"
+            app:rippleColor="@color/colorAccent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher"
+            app:backgroundTint="#00dd00"
+            app:borderWidth="0dp"
+            app:elevation="60dp"
+            app:pressedTranslationZ="40dp" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <TextView
+        android:id="@+id/next_2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@+id/next"
+        android:gravity="center"
+        android:text="RecyclerView与FAB" />
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="AppBarLayout与FAB" />
+
+
+</RelativeLayout>
